@@ -68,22 +68,18 @@ go run . --length 20 --special
 
 ---
 
-## 📚 What's Covered
-
 ### **Core Concepts (day1-2026/)**
 
 **Data Types & Structures**
 - Basic types, strings, arrays, slices, maps
 - Structs, methods, interfaces
 - Pointers and memory management
-- Type conversions and assertions
 
 **Concurrency**
 - Goroutines and the Go scheduler
 - Channels (buffered/unbuffered)
 - Select statement and timeouts
 - Mutexes, WaitGroups, and synchronization
-- G-M-P scheduling model
 
 **Error Handling**
 - Error interface and custom errors
@@ -140,40 +136,28 @@ go test -v
 go test -cover
 ```
 
-**What I Learned:**
-- Secure random number generation
-- Command-line flag parsing
-- Error handling and validation
-- Unit testing with multiple test cases
-- `strings` package for character validation
-- Test-driven development approach
-
 ---
 
-## 🎯 Key Learning Outcomes
+## Key Learning Outcomes
 
-✅ **Concurrency Mastery**
+ **Concurrency Mastery**
 - Understanding goroutines vs threads
 - Channel communication patterns
-- Avoiding race conditions
-- Synchronization primitives
 
-✅ **Error Handling**
+**Error Handling**
 - Idiomatic error patterns
 - Custom error types
-- Error propagation
 
-✅ **Testing Skills**
+**Testing Skills**
 - Writing unit tests
 - Test case design
-- Boundary testing
-- Error case validation
 
-✅ **CLI Development**
+**CLI Development**
 - Flag parsing
 - User input validation
-- Clean code organization
 
+**Web development**
+- HTTP Requests and Methods
 ---
 
 ## 🛠️ Running Examples
@@ -195,22 +179,6 @@ go test -cover ./...
 go fmt ./...
 gofmt -w .
 ```
-
----
-
-## 📊 Progress Status
-
-**Completed:**
-- ✅ Core Go fundamentals (30+ examples)
-- ✅ Concurrency patterns and synchronization
-- ✅ Error handling and file I/O
-- ✅ Comprehensive quiz system (6 quizzes)
-- ✅ Password Generator CLI with tests
-
-**In Progress:**
-- 🔄 Advanced concurrency patterns
-- 🔄 HTTP servers and REST APIs
-- 🔄 Additional mini-projects
 
 ---
 
@@ -239,36 +207,9 @@ gofmt -w .
 - Refactor and improve code
 
 ---
-
-## 🧪 Testing Philosophy
-
-All projects include comprehensive tests covering:
-- ✅ Happy path scenarios
-- ✅ Error cases and validation
-- ✅ Boundary conditions
-- ✅ Edge cases
-
-**Example from Password Generator:**
-- Valid password generation
-- Length validation (too short/long)
-- Character set validation
-- Empty charset error handling
-
----
-
 ## 📄 License
 
 MIT License - Free to use for learning purposes.
-
----
-
-## 🌟 Next Steps
-
-**Upcoming Projects:**
-- URL Shortener with persistence
-- Concurrent web scraper
-- RESTful API server
-- JSON-based database
 
 ---
 
