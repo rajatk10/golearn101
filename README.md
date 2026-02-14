@@ -1,16 +1,15 @@
 # 🎓 GoLearn101
 
-**A comprehensive 7-day intermediate Go programming learning journey**
+**A hands-on Go programming learning journey with exercises, quizzes, and mini-projects**
 
 ---
 
 ## 📖 About
 
-This repository contains hands-on exercises, quizzes, and practical projects for mastering intermediate Go concepts. Designed for developers with basic Go knowledge who want to level up their skills through structured, daily practice.
+This repository documents my journey learning Go through practical exercises, comprehensive quizzes, and real-world mini-projects. It covers fundamental to intermediate concepts with runnable code examples and test-driven development.
 
-**Learning Duration:** 7 days × 3 hours/day  
-**Level:** Intermediate  
-**Approach:** Interactive quizzes, code examples, and real-world projects
+**Level:** Beginner to Intermediate  
+**Approach:** Learn by doing - code examples, quizzes, and projects
 
 ---
 
@@ -18,17 +17,26 @@ This repository contains hands-on exercises, quizzes, and practical projects for
 
 ```
 golearn101/
-├── day1-2026/          # Day 1: Goroutines, Channels, Concurrency
-│   ├── goroutine1.go   # Goroutine examples
-│   ├── mutex1.go       # Mutex and synchronization
-│   └── ...
-├── day2-exercise/      # Day 2: Error Handling, File I/O, Testing
-│   ├── quiz6.go        # Concurrency quiz with answers
-│   ├── error-file.go   # Error handling examples
-│   └── ...
-├── 7_DAY_LEARNING_PLAN.md    # Complete learning roadmap
-├── START_HERE.md             # Getting started guide
-└── GO_LEARNING_RULES.md      # Best practices and guidelines
+├── day1-2026/              # Core Go concepts & fundamentals
+│   ├── goroutine1.go       # Goroutines and concurrency basics
+│   ├── channel1.go         # Channel operations
+│   ├── mutex1.go           # Mutex and synchronization
+│   ├── struct1.go          # Structs and methods
+│   ├── ptr1.go             # Pointers and memory
+│   ├── file1.go            # File I/O operations
+│   └── ... (30+ examples)
+│
+├── day2-exercise/          # Practice exercises & quizzes
+│   ├── quiz-e1.go          # Basic syntax quiz
+│   ├── quiz-e2.go          # Functions & methods quiz
+│   ├── unique-e1.go        # Array/slice exercises
+│   ├── swap-ptr.go         # Pointer exercises
+│   └── ... (15+ exercises)
+│
+├── basic-projects/         # Mini-projects
+│   └── password-gen/       # Password Generator CLI
+│    # Best practices
+└── progress.txt            # Learning progress tracker
 ```
 
 ---
@@ -37,173 +45,231 @@ golearn101/
 
 ### Prerequisites
 - Go 1.22+ installed
-- Basic Go knowledge (syntax, functions, structs)
-- 3 hours daily commitment
+- Basic programming knowledge
+- Terminal/command line familiarity
 
 ### Getting Started
 
-1. **Clone the repository:**
-   ```bash
-   git clone git@github.com:yourusername/golearn101.git
-   cd golearn101
-   ```
+```bash
+# Clone the repository
+git clone git@github.com:rajatk10/golearn101.git
+cd golearn101
 
-2. **Read the learning plan:**
-   ```bash
-   cat 7_DAY_LEARNING_PLAN.md
-   ```
+# Run examples
+go run day1-2026/goroutine1.go
 
-3. **Start with Day 1:**
-   ```bash
-   cd day1-2026
-   go run goroutine1.go
-   ```
+# Run quizzes
+go run day2-exercise/quiz-e6.go
+
+# Try the password generator
+cd basic-projects/password-gen
+go run . --length 20 --special
+```
 
 ---
 
-## 📚 Learning Path
+## 📚 What's Covered
 
-### **Day 1:** Advanced Data Structures & Methods
+### **Core Concepts (day1-2026/)**
+
+**Data Types & Structures**
+- Basic types, strings, arrays, slices, maps
 - Structs, methods, interfaces
-- Pointer vs value receivers
-- Type embedding and composition
+- Pointers and memory management
+- Type conversions and assertions
 
-### **Day 2:** Error Handling & Package Design
-- Custom errors and error wrapping
-- File I/O with bufio
-- Unit testing with `testing` package
-
-### **Day 3:** Goroutines & Concurrency
-- Goroutines and channels
+**Concurrency**
+- Goroutines and the Go scheduler
+- Channels (buffered/unbuffered)
 - Select statement and timeouts
-- Mutexes and synchronization
-- **Quiz 6:** Comprehensive concurrency quiz
+- Mutexes, WaitGroups, and synchronization
+- G-M-P scheduling model
 
-### **Day 4:** Advanced Concurrency Patterns
-- Worker pools and pipelines
-- Context package
-- Race condition detection
+**Error Handling**
+- Error interface and custom errors
+- Error wrapping and unwrapping
+- Panic and recover patterns
 
-### **Day 5:** Web Development Basics
-- HTTP servers and routing
-- JSON encoding/decoding
-- Middleware patterns
+**File I/O**
+- Reading and writing files
+- Buffered I/O with `bufio`
+- File operations and error handling
 
-### **Day 6:** Database & Persistence
-- SQL with `database/sql`
-- Connection pooling
-- Migrations and transactions
-
-### **Day 7:** Testing & Best Practices
-- Table-driven tests
-- Benchmarking
-- Code organization
+**Testing**
+- Unit tests with `testing` package
+- Test assertions and error reporting
+- Running and organizing tests
 
 ---
 
-## 🎯 Key Features
+### **Practice Exercises (day2-exercise/)**
 
-✅ **Interactive Quizzes** - Test your understanding with "What, Why, How" questions  
-✅ **Runnable Examples** - Every concept includes working code  
-✅ **Progressive Learning** - Build on previous day's knowledge  
-✅ **Real-world Projects** - Practical applications of concepts  
-✅ **Best Practices** - Learn idiomatic Go patterns  
+**Comprehensive Quizzes:**
+- `quiz-e1.go` - Basic syntax and control flow
+- `quiz-e2.go` - Functions, methods, and closures
+- `quiz-e3.go` - Interfaces and polymorphism
+- `quiz-e4.go` - Concurrency patterns
+- `quiz-e5.go` - Error handling strategies
+- `quiz-e6.go` - Advanced concurrency (9 questions with detailed answers)
+
+**Coding Exercises:**
+- Array/slice manipulation
+- Pointer operations
+- Struct methods
+- File operations
+- Duplicate detection algorithms
 
 ---
 
-## 📝 Quiz System
+### **Mini-Projects (basic-projects/)**
 
-Each topic includes comprehensive quizzes with:
-- **What questions:** Understanding core concepts
-- **Why questions:** Reasoning behind design decisions
-- **How questions:** Practical implementation details
+#### **Password Generator CLI**
 
-**Example:** `day2-exercise/quiz6.go` - Complete concurrency quiz with 9 questions and answers
+**Usages Example:**
+```bash
+cd basic-projects/password-gen
+
+# Generate default password (16 chars, all types)
+go run .
+
+# Custom length and options
+go run . --length 20 --special=false
+
+# Run tests
+go test -v
+go test -cover
+```
+
+**What I Learned:**
+- Secure random number generation
+- Command-line flag parsing
+- Error handling and validation
+- Unit testing with multiple test cases
+- `strings` package for character validation
+- Test-driven development approach
+
+---
+
+## 🎯 Key Learning Outcomes
+
+✅ **Concurrency Mastery**
+- Understanding goroutines vs threads
+- Channel communication patterns
+- Avoiding race conditions
+- Synchronization primitives
+
+✅ **Error Handling**
+- Idiomatic error patterns
+- Custom error types
+- Error propagation
+
+✅ **Testing Skills**
+- Writing unit tests
+- Test case design
+- Boundary testing
+- Error case validation
+
+✅ **CLI Development**
+- Flag parsing
+- User input validation
+- Clean code organization
 
 ---
 
 ## 🛠️ Running Examples
 
 ```bash
-# Run individual examples
-go run day1-2026/goroutine1.go
-go run day1-2026/mutex1.go
+# Run any example
+go run day1-2026/<filename>.go
 
-# Run quiz files
-go run day2-exercise/quiz6.go
+# Run with race detector
+go run -race day1-2026/goroutine1.go
 
 # Run tests
 go test ./...
+
+# Run tests with coverage
+go test -cover ./...
+
+# Format code
+go fmt ./...
+gofmt -w .
 ```
 
 ---
 
-## 📖 Key Topics Covered
+## 📊 Progress Status
 
-### Concurrency
-- Goroutines vs OS threads
-- Channels (buffered/unbuffered)
-- Select statement
-- Mutexes and WaitGroups
-- G-M-P scheduling model
+**Completed:**
+- ✅ Core Go fundamentals (30+ examples)
+- ✅ Concurrency patterns and synchronization
+- ✅ Error handling and file I/O
+- ✅ Comprehensive quiz system (6 quizzes)
+- ✅ Password Generator CLI with tests
 
-### Error Handling
-- Custom error types
-- Error wrapping with `fmt.Errorf`
-- Interface satisfaction for errors
-- Panic and recover
-
-### File I/O
-- Buffer-based reading/writing
-- `bufio` package for efficiency
-- File operations and cleanup
-
-### Testing
-- Unit tests with `*testing.T`
-- Table-driven tests
-- Subtests and parallel execution
+**In Progress:**
+- 🔄 Advanced concurrency patterns
+- 🔄 HTTP servers and REST APIs
+- 🔄 Additional mini-projects
 
 ---
 
-## 🎓 Learning Resources
+## 📖 Key Resources
 
-- **7_DAY_LEARNING_PLAN.md** - Detailed daily curriculum
-- **START_HERE.md** - Setup and orientation guide
-- **GO_LEARNING_RULES.md** - Coding standards and best practices
-- **progress.txt** - Track your learning progress
+- **Go By Example** - https://gobyexample.com/
+- **Go Tour** - https://go.dev/doc/
+---
+
+## 💡 Learning Approach
+
+**1. Understand Concepts**
+- Read examples in `day1-2026/`
+- Study quiz questions and answers
+
+**2. Practice**
+- Complete exercises in `day2-exercise/`
+- Modify examples to experiment
+
+**3. Build Projects**
+- Apply concepts in mini-projects
+- Write tests for validation
+
+**4. Review & Iterate**
+- Run tests to verify understanding
+- Refactor and improve code
 
 ---
 
-## 🤝 Contributing
+## 🧪 Testing Philosophy
 
-This is a personal learning repository. Feel free to fork and adapt for your own learning journey!
+All projects include comprehensive tests covering:
+- ✅ Happy path scenarios
+- ✅ Error cases and validation
+- ✅ Boundary conditions
+- ✅ Edge cases
+
+**Example from Password Generator:**
+- Valid password generation
+- Length validation (too short/long)
+- Character set validation
+- Empty charset error handling
 
 ---
 
 ## 📄 License
 
-MIT License - Feel free to use this for your own learning.
+MIT License - Free to use for learning purposes.
 
 ---
 
-## 🌟 Progress Tracking
+## 🌟 Next Steps
 
-Track your progress in `progress.txt` or create your own learning journal.
-
-**Current Status:** Day 2-3 (Concurrency & Error Handling)
-
----
-
-## 💡 Tips for Success
-
-1. **Code along** - Don't just read, type and run the examples
-2. **Complete quizzes** - Test your understanding before moving forward
-3. **Experiment** - Modify examples to see what happens
-4. **Build projects** - Apply concepts to real problems
-5. **Review regularly** - Revisit previous days' concepts
+**Upcoming Projects:**
+- URL Shortener with persistence
+- Concurrent web scraper
+- RESTful API server
+- JSON-based database
 
 ---
 
-**Happy Learning! 🚀**
-
-*Master Go one day at a time.*
+**Learning Go, one project at a time! 🚀**
