@@ -11,6 +11,7 @@ CLI tool to search movies using OMDb API with SQLite caching to avoid redundant 
 - Select FREE tier (1000 requests/day)
 - Verify email and get your API key
 
+
 ### 2. Configure
 Create `config.json`:
 ```json
