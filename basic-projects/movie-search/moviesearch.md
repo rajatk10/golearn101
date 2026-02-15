@@ -87,17 +87,6 @@ movie-search/
 
 ---
 
-## Features
-
-✓ OMDb API integration  
-✓ SQLite database caching  
-✓ Case-insensitive search  
-✓ Automatic database initialization  
-✓ Config file for API key  
-✓ Detailed logging (cache hit/miss)
-
----
-
 ## Notes
 
 - Database and table created automatically on first run
