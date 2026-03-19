@@ -1,0 +1,12 @@
+{"L":"INFO","T":"2026-03-19T19:59:55.780+0530","C":"capstone-project/main.go:65","M":"Initializing the init() function..."}
+{"L":"FATAL","T":"2026-03-19T19:59:55.780+0530","C":"capstone-project/main.go:70","M":"MONGODB_URI is not set","S":"main.init.0\n\t/Users/kumar.rajat/GolandProjects/golearn101/capstone-project/main.go:70\nruntime.doInit1\n\t/opt/homebrew/opt/go/libexec/src/runtime/proc.go:8103\nruntime.doInit\n\t/opt/homebrew/opt/go/libexec/src/runtime/proc.go:8070\nruntime.main\n\t/opt/homebrew/opt/go/libexec/src/runtime/proc.go:258"}
+{"L":"INFO","T":"2026-03-19T20:01:35.335+0530","C":"capstone-project/main.go:65","M":"Initializing the init() function..."}
+{"L":"INFO","T":"2026-03-19T20:01:35.351+0530","C":"capstone-project/main.go:80","M":"Connected to mongodb client"}
+{"L":"INFO","T":"2026-03-19T20:01:35.353+0530","C":"capstone-project/main.go:82","M":"Connected to mongodb collection recipes"}
+{"L":"INFO","T":"2026-03-19T20:01:35.357+0530","C":"capstone-project/main.go:95","M":"Connected to redis client"}
+{"L":"INFO","T":"2026-03-19T20:01:35.361+0530","C":"capstone-project/main.go:107","M":"Connected to elasticsearch"}
+{"L":"INFO","T":"2026-03-19T20:01:36.682+0530","C":"handlers/auth.go:27","M":"Public key fetched from AWS"}
+{"L":"INFO","T":"2026-03-19T20:01:36.682+0530","C":"capstone-project/main.go:120","M":"Initialize Authentication Handler"}
+{"L":"INFO","T":"2026-03-19T20:01:36.682+0530","C":"capstone-project/main.go:144","M":"Initializing server-main now..."}
+{"L":"INFO","T":"2026-03-19T20:01:44.083+0530","C":"handlers/handler.go:115","M":"Fetching recipe by id","recipe_id":"69ba7a9cde5662aac3cb0ee9"}
+{"L":"INFO","T":"2026-03-19T20:01:44.084+0530","C":"handlers/handler.go:119","M":"Found recipe in redis","recipe_id":"69ba7a9cde5662aac3cb0ee9"}
