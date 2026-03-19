@@ -1,6 +1,6 @@
-# Recipe Management REST API
+# Cooking Web Portal
 
-A RESTful recipe platform built with Go + Gin and a React frontend. The project demonstrates a production-style architecture with persistence, caching, full-text search, JWT/Cognito authentication flow, and structured logging.
+A Cooking platform, filled with notes, recipes, and other useful information built with Go + Gin and a React frontend. The project demonstrates a production-style architecture with persistence, caching, full-text search, JWT/Cognito authentication flow, and structured logging.
 
 ## Features
 
@@ -92,7 +92,7 @@ npm start
 
 React app runs on `http://localhost:3000` (default port). Change it if you want to.
 
-## API Endpoints
+## API Endpoints ( REST API )
 
 ### Recipes (Public)
 - `GET /recipes` - List all recipes (Cached via Redis)
